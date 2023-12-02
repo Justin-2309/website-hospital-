@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register form </title>
+    <link rel="stylesheet" href="mdb/css/bootstrap.css">
+    <link rel="stylesheet" href="mdb/css/mdb.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
+    <style>
+        h1{
+            text-align:center;
+            font-family: Algerian;
+            color: black;
+        }
+        legend{
+            border: 3px solid white;
+            border-radius: 0px 20px;
+            padding: 15px 50px;
+            background: linear-gradient(45deg,black,rgb(74, 183, 255));
+        }
+        input{
+            padding: 10px 6px;
+        }
+        #one input,textarea,select{
+            margin-left: 40px;
+            background-color: rgb(245, 245, 245);
+            
+        }
+        body{
+           background-color:white;
+           color: rgb(114, 192, 255);
+         
+       }
+        form{
+            margin-bottom: 20px;
+            border-radius: 0px 10px;
+        }
+        #two{
+            width: 85%;
+        }
+        .two input{
+            margin-left: 10px;
+        }
+        input,textarea{
+            border-radius: 5px;
+            border: none;
+            margin-bottom:10px;
+        }
+        #three{
+            width:77%;
+        }
+        fieldset{
+            border: 3px solid white;
+            border-radius: 0px 10px;
+            background-color: rgb(4, 14, 14);
+        }
+        #four input[type="radio"],input[type="date"]{
+            margin-left: 40px;
+        }
+        input[type="Submit"],input[type="Reset"]{
+            margin-left: 200px;
+            border: 3px solid white;
+            background: linear-gradient(45deg,black,rgb(83, 200, 255));
+            color:white;
+            padding: 15px 60px;
+            cursor: pointer;
+        }
+        #time{
+            padding-left: 40px;
+        }
+        #four{
+            width: 77%;
+        }
+        style>
+     header
+   {
+	padding:40px;
+    text-align: end; 
+  }
+   nav
+  {
+	text-align:center;
+	padding:10px;
+  }  
+   nav>a 
+  {
+	color:rgb(0, 0, 0);
+	text-decoration:dashed;
+	margin:20px;
+	padding:3px 10px;
+	border-radius:20px;
+  }
+  nav>a:hover
+  {
+	box-shadow:0 0 10px rgb(0, 0, 0);
+  }
+  header
+{
+	padding:15px;
+}
+.dropdown-item:hover{
+    background-color: rgb(71, 66, 66);
+    color: white !important;
+}
+
+header{
+    text-align: start;
+    padding-top: 14px;
+  
+}
+
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'poppins' , sans-serif;
+
+    }
+    .container{
+      width: 100%;
+      height: 100vh;
+     background: rgb(0, 0, 126);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .btn{
+      padding: 10px 60px;
+      background: #fff;
+      border: 0;
+      outline: none;
+      cursor: pointer;
+      font-size: 22px;
+      font-weight: 500;
+      border-radius: 30px;
+    }
+    .popup{
+      width: 400px;
+      background: #fff;
+      border-radius: 6px;
+      position: absolute;
+      top: 0%;
+      left: 50%;
+      transform: translate(-50%, -50%)scale(0.1);
+      text-align: center;
+      padding: 0 30px;
+      color: #333;
+      visibility: hidden;
+      transition: transform 0.4s, top 0.4s;
+    }
+    .open-popup{
+      visibility: visible;
+      top: 50%;
+      transform: translate(-50%,-50%) scale(1);
+    }
+    .popup img{
+      width: 100px;
+      margin-top: -50px;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 2);
+    }
+    .popup h2{
+      font-size: 38px;
+      font-weight: 500;
+      margin: 30px 0 10px;
+    }
+    .popup button{
+      width: 100%;
+      margin-top: 50px;
+      padding: 10px;
+      background: #0245aa;
+      color: #fff;
+      border: 0;
+      outline: none;
+      font-size: 18px;
+      border-radius: 4px;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 2);
+
+    }
+</style>
+    </style>
+    </head>
+    <body>
+        <NAv>
+            <i class="fa-solid fa-house"></i> <a  href="home.html">Home</a>
+            <i class="fa-solid fa-hospital"></i><a  href="services.html">Services</a>   
+            <i class="fa-solid fa-user-doctor"></i><a  href="Doctor.html">Doctor</a>
+            <i class="fa-solid fa-phone"></i><a  href="contact.html">Contact</a>
+            <i class="fa-solid fa-calendar-check"></i><a  href="online Appointment.html">Online Appointment </a>
+        </NAv>
+       
+    <marquee> <h2>We Are Here To Hear And Heal Your Health Problems.</h2></marquee>
+    <div>
+        <h1>Online Appointment</h1>
+           <form id="one">
+                <fieldset> 
+                        <legend>Personal Information</legend>
+                        <div id ="container">
+                            <table>
+                                <tr>
+                                    <td>First Name</td>
+                                    <td><input type="text"></td>
+                                    <td>Middle Name</td>
+                                    <td><input type="text"></td>
+                                    <td>Last Name</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>Father Name</td>
+                                    <td><input type="text"></td>
+                                    <td>Mother Name</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>Address</td>
+                                    <td><textarea name="" id="" cols="30" rows="3"></textarea></td>
+                                    <td>Permanent Address</td>
+                                    <td><textarea name="" id="" cols="30" rows="3"></textarea></td>
+                                </tr>
+                                <tr><td>Phone Number</td></tr>
+                                <tr>
+                                    <td>Landline Number</td>
+                                    <td><input type="text"></td>
+                                    <td>Mobile Number</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>Date Of Birth</td>
+                                    <td><input type="datetime-local"></td>
+                                    <td>Place Of Birth</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>Select Gender</td>
+                                    <td><input type="radio" name="same">Male</td>
+                                    <td><input type="radio" name="same">Female</td>
+                                </tr>
+                                <tr>
+                                    <td>Adharcard Number</td>
+                                    <td><input type="number"></td>
+                                    <td>Pancard Number</td>
+                                    <td><input type="number"></td>
+                                </tr>
+                                
+                            </table>
+                        </div>
+                </fieldset>
+           </form>
+           
+                   
+                </table>
+            </fieldset>
+           </form>
+                </table>
+            </fieldset>
+           </form>
+          
+     </div>
+     <button type="submit" class="btn" onclick="openpopup()">submit</button>
+     <div class="popup" id="popup">
+       <img src="blueapp01.png">
+       <h2>Thank you !</h2>
+      <p>Your Details has been sussessfully submitted. Thanks ! </p>
+      <a href="home.html"><button type="button">OK</button></a>
+       
+     </div>
+    </div>
+   <script>
+ let popup = document.getElementById("popup");
+ 
+ function openpopup(){
+ popup.classList.add("open-popup");
+ }
+
+   </script>
+    </body>
+    </html>
+
+
+
+
+
+
